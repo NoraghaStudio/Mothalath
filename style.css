@@ -255,13 +255,13 @@ body.rtl .reveal-right {
   max-height: 54px;
   width: auto;
   transition: var(--transition);
-  /* Always render the logo in white */
+  /* The logo is white initially over the dark hero background */
   filter: brightness(0) invert(1);
 }
 
 .navbar.scrolled .nav-logo-img {
-  /* Keep logo white even on scrolled navbar */
-  filter: brightness(0) invert(1);
+  /* Turn the logo black when the navbar becomes white */
+  filter: brightness(0);
 }
 
 .nav-links {
