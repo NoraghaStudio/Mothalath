@@ -1,0 +1,95 @@
+Website Design Plan for "Triangle Design for Engineering"
+(مثلث الرسم للاستشارات الهندسية)
+
+1. OVERALL AESTHETIC & THEME
+---------------------------------------------------------
+Color Palette:
+- Primary Color: Deep Emerald Green (Based on the company profile and Vision 2030 branding on the cover).
+- Secondary Color: Dark Grey/Charcoal (for text and structural accents).
+- Background: Clean White and abstract light greys to give a spacious, architectural feel.
+- Patterns: Subtle triangular geometric patterns and lines serving as a motif in the background across the site, playing off the company name "Triangle" (مثلث).
+
+Typography:
+- Arabic: Modern, highly legible corporate fonts like "Cairo", "Tajawal", or "Almarai".
+- English: Sleek sans-serif fonts such as "Montserrat", "Roboto", or "Inter".
+
+Visual Style:
+- Professional, corporate, and engineering-focused.
+- Uses high-quality photography matching the profile (e.g., modern buildings, surveying equipment, blueprints mixed with real-world transitions).
+- Hover effects on cards that slice diagonally or highlight with the primary green color to match the triangle theme.
+
+
+2. WEBSITE ARCHITECTURE (SITEMAP)
+---------------------------------------------------------
+The website should feature a sticky navigation bar at the top with a multi-language switcher (Arabic / English), considering the profile has bilingual elements.
+
+A. Home Page (الصفحة الرئيسية)
+B. About Us (من نحن)
+C. Services (خدماتنا)
+D. Our Experience & Portfolio (خبراتنا ومعرض الأعمال)
+E. Partners (شركاؤنا)
+F. Contact Us (اتصل بنا)
+
+
+3. DETAILED PAGE BREAKDOWNS
+---------------------------------------------------------
+
+A. HOME PAGE
+- Hero Section: A full-screen slider or high-quality background video showing modern engineering works (blueprints transitioning to buildings).
+  * Headline: "دقة التصميم تبدأ من مثلث الرسم" (Design accuracy begins with Triangle of Drawing).
+  * Sub-headline: Comprehensive Engineering Consulting & Project Management.
+  * Call to Action (CTA): "Request a Consultation" or "Discover Our Services".
+- Quick About Section: A short introduction focusing on their alignment with Vision 2030 (as seen in the profile).
+- Services Overview (Grid Layout): 6 cards featuring their core offerings:
+  1. Building Licenses (رخص بناء)
+  2. Exterior & Interior Design (تصميم وواجهات)
+  3. Supervision & Management (إشراف وإدارة مشروعات)
+  4. Surveying (مساحة)
+  5. Technical Office (أعمال المكتب الفني)
+  6. Follow-up Works (متابعة الأعمال)
+- Trust Badges: A banner showcasing their Commercial Registry (س.ت 1009160525) and "Certified Experience" badges (خبرة معتمدة).
+
+B. ABOUT US PAGE
+- Company Identity: A detailed block about how it started.
+- Leadership Words (كلمة الإدارة و المدير العام): Two elegant text blocks alongside professional portraits or office imagery, conveying their commitment to quality.
+- Vision, Mission & Goals (الرؤية والأهداف والرسالة): A 3-column section.
+  * Vision: Icon of an eye.
+  * Mission: Icon of a target/flag.
+  * Goals: Icon of ascending graph or a blueprint.
+- Organizational Structure (الهيكل التنظيمي): An interactive or beautifully styled tree chart showing:
+  * General Manager -> Project Management, Business Dev, Financial Dept, HR, Surveying Dept.
+
+C. SERVICES PAGE
+A dedicated page that thoroughly explains each department:
+- Surveying and Level Works (أعمال المساحة والمناسيب): Showcasing the use of total stations, soil study capabilities, and geographical site prep.
+- Follow-up Works (متابعة الأعمال): Detailed explanation on how they supervise on-site execution, ensuring direct technical & administrative delivery.
+- Technical Office (أعمال المكتب الفني): Mentioning quantity surveying, shop drawings, etc.
+- Each service block should have an image on one side and bullet points on the other, alternating down the page.
+
+D. OUR EXPERIENCE & PORTFOLIO
+- A filterable gallery where users can sort by:
+  * Residential
+  * Commercial
+  * Governmental
+  * Interior/Exterior
+- Each project card opens a modal or sub-page showing the project's specifics, total area, client, and before/after pictures.
+
+E. PARTNERS PAGE
+- A clean, grid layout displaying logos of their partners, clients, and authorized entities to build immediate trust.
+
+F. CONTACT US PAGE
+- Contact Form: Name, Phone, Email, Service Needed, and a text box for the message.
+- Office Information Panel:
+  * Address: طريق الأمير محمد بن سلمان – قرطبة الدور الأول مكتب رقم (6) (Prince Mohammed Bin Salman Road - Qurtubah, 1st Floor, Office 6).
+  * Phone Numbers: 0549001760 / 0549007520.
+  * CR Number: 1009160525.
+- Embedded Google Map showing a pin with the company's logo.
+- QR Code integration (as seen on the profile cover) that users can scan to save their contact info easily.
+
+
+4. USER EXPERIENCE (UX) & INTERACTIVITY
+---------------------------------------------------------
+- Responsiveness: Fully optimized for mobile / tablets, as a lot of clients might browse via mobile.
+- RTL / LTR Support: Perfect Right-to-Left alignment for the Arabic version, and standard LTR for the English version.
+- Micro-interactions: Triangular wipe-transitions when moving between pages. Soft fade-ins for text and images when scrolling down to give it a premium, modern feel.
+- WhatsApp Integration: A floating WhatsApp button in the corner for instant messaging, which is heavily utilized in Saudi Arabia.
