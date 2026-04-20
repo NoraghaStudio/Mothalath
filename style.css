@@ -428,6 +428,19 @@ body.rtl .reveal-right {
   color: var(--text-light);
 }
 
+/* English (LTR) specific: Stack logo text in two lines */
+body.ltr .nav-logo-text {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+body.ltr .nav-logo-sub {
+  font-size: 0.65rem;
+  font-weight: 500;
+  margin-top: -2px;
+}
+
 /* ========================================
    CERTIFICATIONS GALLERY
    ======================================== */
