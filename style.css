@@ -594,6 +594,7 @@ body.rtl .reveal-right {
 
 .hero-content {
   flex: 1;
+  max-width: 60%;
 }
 
 .hero-badge {
@@ -1496,6 +1497,10 @@ body.ltr .back-to-top {
   .hero .container {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
   }
 
   .hero-desc {
