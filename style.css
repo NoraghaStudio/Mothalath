@@ -255,12 +255,13 @@ body.rtl .reveal-right {
   max-height: 54px;
   width: auto;
   transition: var(--transition);
-  /* The hero section is dark, so we invert the dark logo to be white initially */
+  /* Always render the logo in white */
   filter: brightness(0) invert(1);
 }
 
 .navbar.scrolled .nav-logo-img {
-  filter: none;
+  /* Keep logo white even on scrolled navbar */
+  filter: brightness(0) invert(1);
 }
 
 .nav-links {
@@ -1467,6 +1468,10 @@ body.ltr .back-to-top {
     font-size: 1.2rem;
     color: white !important;
     padding: 12px 30px;
+  }
+
+  .nav-logo-img {
+    max-height: 36px;
   }
 
   .nav-cta {
