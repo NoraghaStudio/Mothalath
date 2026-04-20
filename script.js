@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lightboxImg = lightbox ? lightbox.querySelector('img') : null;
   const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
 
-  document.querySelectorAll('.portfolio-item').forEach(item => {
+  document.querySelectorAll('.portfolio-item, .cert-img-card').forEach(item => {
     item.addEventListener('click', () => {
       const imgSrc = item.querySelector('img').src;
       if (lightboxImg) {
