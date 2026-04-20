@@ -4,7 +4,7 @@ Website Design Plan for "Triangle Design for Engineering"
 1. OVERALL AESTHETIC & THEME
 ---------------------------------------------------------
 Color Palette:
-- Primary Color: Deep Emerald Green (Based on the company profile and Vision 2030 branding on the cover).
+- Primary Color: Deep E(merald Green (Based on the company profile and Vision 2030 branding on the cover).
 - Secondary Color: Dark Grey/Charcoal (for text and structural accents).
 - Background: Clean White and abstract light greys to give a spacious, architectural feel.
 - Patterns: Subtle triangular geometric patterns and lines serving as a motif in the background across the site, playing off the company name "Triangle" (مثلث).

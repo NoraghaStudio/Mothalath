@@ -1343,7 +1343,7 @@ body.ltr .service-card:hover::after {
 }
 
 .footer-logo-img {
-  max-width: 180px;
+  max-width: 120px;
   height: auto;
   filter: brightness(0) invert(1);
 }
