@@ -251,45 +251,16 @@ body.rtl .reveal-right {
   z-index: 1001;
 }
 
-.nav-logo .logo-icon {
-  width: 48px;
-  height: 48px;
-  position: relative;
-}
-
-.nav-logo .logo-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-.nav-logo .logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.nav-logo .logo-text .ar-name {
-  font-weight: 800;
-  font-size: 1rem;
-  color: var(--bg-white);
+.nav-logo-img {
+  max-height: 54px;
+  width: auto;
   transition: var(--transition);
+  /* The hero section is dark, so we invert the dark logo to be white initially */
+  filter: brightness(0) invert(1);
 }
 
-.nav-logo .logo-text .en-name {
-  font-family: var(--font-en);
-  font-weight: 500;
-  font-size: 0.65rem;
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 1px;
-  transition: var(--transition);
-}
-
-.navbar.scrolled .nav-logo .logo-text .ar-name {
-  color: var(--text-dark);
-}
-
-.navbar.scrolled .nav-logo .logo-text .en-name {
-  color: var(--text-medium);
+.navbar.scrolled .nav-logo-img {
+  filter: none;
 }
 
 .nav-links {
