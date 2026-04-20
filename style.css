@@ -394,6 +394,36 @@ body.rtl .reveal-right {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* Nav Logo Text */
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.nav-logo-name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: white;
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+
+.nav-logo-sub {
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.75);
+  transition: var(--transition);
+}
+
+.navbar.scrolled .nav-logo-name {
+  color: var(--text-dark);
+}
+
+.navbar.scrolled .nav-logo-sub {
+  color: var(--text-light);
+}
+
 /* ========================================
    HERO SECTION
    ======================================== */
@@ -1522,6 +1552,14 @@ body.ltr .back-to-top {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-logo-text {
+    display: none;
+  }
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
@@ -1565,6 +1603,90 @@ body.ltr .back-to-top {
     padding: 8px 16px;
     font-size: 0.8rem;
   }
+}
+
+/* ========================================
+   CERTIFICATIONS SECTION
+   ======================================== */
+.certs-section {
+  background: var(--bg-light);
+  position: relative;
+}
+
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.cert-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-lg);
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.cert-badge-icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.cert-card h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.cert-number {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+  font-family: var(--font-en);
+}
+
+.cert-desc {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.cert-card--barcode {
+  grid-column: span 1;
+}
+
+.location-barcode {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin: 10px auto 12px;
+  border-radius: var(--radius-sm);
+  display: block;
 }
 
 /* ========================================
