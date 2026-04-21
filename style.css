@@ -1258,7 +1258,7 @@ body.ltr .service-card:hover::after {
 
 .portfolio-slider-container {
   position: relative;
-  padding: 0 50px;
+  padding: 0;
 }
 
 /* .portfolio-grid now shares styles with .certs-gallery above */
