@@ -189,4 +189,85 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // ── Sliders Initialization ──
+  function initSlider(galleryId, prevId, nextId) {
+    const gallery = document.getElementById(galleryId);
+    const prev = document.getElementById(prevId);
+    const next = document.getElementById(nextId);
+
+    if (gallery && prev && next) {
+      const isRTL = document.dir === 'rtl';
+      let isAnimating = false;
+
+      next.addEventListener('click', () => {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        const itemWidth = gallery.firstElementChild.offsetWidth;
+        const gap = parseInt(window.getComputedStyle(gallery).gap) || 0;
+        const moveAmount = itemWidth + gap;
+
+        // Smoothly scroll to the next item
+        gallery.scrollBy({ left: isRTL ? -moveAmount : moveAmount, behavior: 'smooth' });
+
+        // After animation, shift DOM and adjust scroll silently
+        setTimeout(() => {
+          gallery.style.scrollBehavior = 'auto';
+          gallery.style.scrollSnapType = 'none';
+          
+          gallery.appendChild(gallery.firstElementChild);
+          
+          if (isRTL) {
+            gallery.scrollLeft += moveAmount;
+          } else {
+            gallery.scrollLeft -= moveAmount;
+          }
+          
+          void gallery.offsetWidth; // Force reflow
+          
+          gallery.style.scrollBehavior = 'smooth';
+          gallery.style.scrollSnapType = 'x mandatory';
+          isAnimating = false;
+        }, 450);
+      });
+
+      prev.addEventListener('click', () => {
+        if (isAnimating) return;
+        isAnimating = true;
+
+        const itemWidth = gallery.firstElementChild.offsetWidth;
+        const gap = parseInt(window.getComputedStyle(gallery).gap) || 0;
+        const moveAmount = itemWidth + gap;
+
+        // Shift DOM and adjust scroll silently BEFORE animating
+        gallery.style.scrollBehavior = 'auto';
+        gallery.style.scrollSnapType = 'none';
+        
+        gallery.prepend(gallery.lastElementChild);
+        
+        if (isRTL) {
+          gallery.scrollLeft -= moveAmount;
+        } else {
+          gallery.scrollLeft += moveAmount;
+        }
+        
+        void gallery.offsetWidth; // Force reflow
+        
+        gallery.style.scrollBehavior = 'smooth';
+        gallery.style.scrollSnapType = 'x mandatory';
+        
+        // Smoothly scroll back to the prepended item
+        gallery.scrollBy({ left: isRTL ? moveAmount : -moveAmount, behavior: 'smooth' });
+        
+        setTimeout(() => {
+          isAnimating = false;
+        }, 450);
+      });
+    }
+  }
+
+  initSlider('certGallery', 'certPrev', 'certNext');
+  initSlider('certGalleryEn', 'certPrevEn', 'certNextEn');
+  initSlider('portGallery', 'portPrev', 'portNext');
+  initSlider('portGalleryEn', 'portPrevEn', 'portNextEn');
 });
