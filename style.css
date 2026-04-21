@@ -730,6 +730,12 @@ body.ltr .hero .container {
   margin-right: auto;
 }
 
+@media (max-width: 768px) {
+  body.rtl .hero .container, body.ltr .hero .container {
+    margin: 0 auto;
+  }
+}
+
 .hero-content {
   flex: 1;
   max-width: 100%;
@@ -1786,24 +1792,36 @@ body.ltr .back-to-top {
     display: none;
   }
 
-  .hero-visual {
-    display: none;
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
-  .hero h1 {
-    font-size: 1.8rem;
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
   }
 
+  .hero-buttons,
   .hero-stats {
-    gap: 24px;
+    justify-content: center;
   }
 
-  .hero-stat h3 {
-    font-size: 1.5rem;
+  .hero-desc {
+    margin: 0 auto 36px;
   }
 
-  .services-grid {
-    grid-template-columns: 1fr;
+  .portfolio-grid, .certs-gallery {
+    gap: 16px;
+  }
+
+  .portfolio-item img {
+    height: 380px;
+  }
+
+  .cert-img-card img {
+    height: 320px;
   }
 
   .portfolio-grid {
