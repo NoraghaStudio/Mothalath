@@ -270,4 +270,17 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider('certGalleryEn', 'certPrevEn', 'certNextEn');
   initSlider('portGallery', 'portPrev', 'portNext');
   initSlider('portGalleryEn', 'portPrevEn', 'portNextEn');
+
+  // ── Prevent Image Saving ──
+  document.addEventListener('contextmenu', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
+
+  document.addEventListener('dragstart', function(e) {
+    if (e.target.tagName === 'IMG') {
+      e.preventDefault();
+    }
+  });
 });
